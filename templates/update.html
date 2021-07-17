@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Editar conteúdo</title>
+    <link rel="stylesheet" href="/static/crud.css"/>
+    <link rel="stylesheet" href="/static/nav-bar.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+        <div class="nav-bar">
+
+            <div class="left-side">
+                <div class="nav-link">
+                <a href="index.html">Home</a>
+                </div>
+            </div>
+        
+            <div class="right-side">
+                <div class="logo">
+                LUGARES DO MUNDO
+                </div>
+            </div>
+        </div>    
+    {% if sucesso %}
+
+    <div class="titulo">
+      <p>Registro editado com sucesso!</p>
+    </div>
+
+    {% endif %}
+
+    <div class="titulo">
+      <h2>Editar conteúdo</h2>
+    </div>
+
+    <div class="text">
+      <form class="form" method="POST">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" value="{{cidades.nome}}" />
+        <div class="input">
+          <label for="imagem_url">Link da Imagem:</label>
+          <input
+            type="text"
+            id="imagem_url"
+            name="imagem_url"
+            value="{{cidades.imagem_url}}"
+          />
+        </div>
+        <div class="curiosidades">
+            <label for="curiosidades">Escreva sobre o lugar:</label>
+            <textarea rows="10" cols="33" name="curiosidades" value="{{cidades.curiosidades}}"></textarea>
+        </div>
+
+        <div class="enviar-textarea">
+          <input type="submit" class="botao" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
