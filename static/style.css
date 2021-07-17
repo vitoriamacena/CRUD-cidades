@@ -1,0 +1,68 @@
+
+
+.titulo a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.lista-lugares {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lugar {
+  position: relative;
+}
+
+.img-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+}
+
+.titulo {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: aliceblue;
+}
+
+.titulo {
+  transition: 1s;
+  color: transparent;
+  font-family: 'Poppins', sans-serif;
+}
+
+.image-blur {
+  transition: 1s;
+  filter: brightness(10%);
+}
+
+.titulo:hover {
+  color: rgb(228, 234, 240);
+  font-weight: 600;
+}
+
+.update {
+  position: absolute;
+  top: 10px;
+  left: 16px;
+}
+
+.delete {
+  position: absolute;
+  top: 10px;
+  left: 50px
+}
+
+.create {
+  max-width: 30px;
+}

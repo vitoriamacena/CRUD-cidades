@@ -1,0 +1,79 @@
+body {
+    background-color: #F4F4F4
+}
+
+p, label, input, button, a, .text{
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    width: 56.2vw;
+    background-color: #FFFFFF;
+    margin-left: 15rem;
+    align-items: center;
+  }
+
+.box {
+    display: inline-block;
+
+}
+
+.titulo {
+    font-size: 34px;
+    margin-left: 50px;
+    color: rgb(73, 70, 70);
+}
+
+.curiosidades {
+    text-indent: 70px;
+    width: 0;
+    min-width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 48rem;
+}
+
+.bc {
+    margin-left: 45px;
+}
+
+.choice {
+    margin-right: 1rem;
+}
+
+label {
+    font-weight: bold;
+    margin-left: 4rem;
+    color: rgb(73, 70, 70);
+}
+
+input {
+    border: .2rem solid rgb(177, 192, 206);
+    padding: 0 2rem;
+    outline: none;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+    margin-left: .3rem;
+    color: rgb(73, 70, 70);
+}
+
+textarea {
+    background: transparent;
+    width: 50%;
+    display: block;
+    outline: none;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.enviar-textarea {
+    margin-left: 4rem;
+}
+

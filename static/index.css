@@ -1,0 +1,40 @@
+body .container {
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 84vh;
+  background: url('/static/images/bg-img-home.jpg');
+  background-size: cover;
+}
+
+.titulo {
+        text-align: center;
+        margin-top: 10%;
+        font-size:100%;
+        color: azure;
+        font-family: 'Poppins', sans-serif;
+}
+
+.leva-lista {
+        display: block;
+        width: 115px;
+        height: 25px;
+        background: rgb(29, 114, 184);
+        padding: 7px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight:700;
+        margin-left: 40rem;
+        line-height: 25px;
+
+}
+
+.leva-lista a{
+        text-decoration: none;
+        color: white;
+
+}
+
+
