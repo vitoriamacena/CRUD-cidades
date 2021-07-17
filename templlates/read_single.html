@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Lugares do Mundo</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="/static/nav-bar.css"/>
+  <link rel="stylesheet" href="/static/crud.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+
+            <div class="left-side">
+                <div class="nav-link">
+                <a href="index.html">Home</a>
+                </div>
+            </div>
+        
+            <div class="right-side">
+                <div class="logo">
+                LUGARES DO MUNDO
+                </div>
+            </div>
+        </div>
+        <div class="conteudo">
+            <div class="box">
+                <div class="titulo">
+                    <h2>{{cidades.nome}}</h2>
+                </div>
+                <div class="img">
+                    <img src="{{cidades.imagem_url}}" alt="{{cidades.nome}}">
+                </div>
+                <div class="curiosidades">
+                    <p>{{cidades.curiosidades}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

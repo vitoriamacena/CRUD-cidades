@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deletar conteúdo</title>
+    <link rel="stylesheet" href="/static/crud.css"/>
+    <link rel="stylesheet" href="/static/nav-bar.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+
+            <div class="left-side">
+                <div class="nav-link">
+                <a href="index.html">Home</a>
+                </div>
+            </div>
+        
+            <div class="right-side">
+                <div class="logo">
+                LUGARES DO MUNDO
+                </div>
+            </div>
+        </div>
+    {% if sucesso %}
+        <div class="removido_sucesso">
+            <p>Removido com sucesso</p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botao">Visualizar tudo</a>
+        </div>
+
+    {% elif cidades %}
+        <div class="titulo">
+            <h2>Remover conteúdo</h2>
+        </div>
+
+        <div class="bc">
+            <div class="text">
+                <h4>{{cidades.nome}}</h4>
+                <p>Tem certeza que deseja remover este conteúdo?</p>
+            </div>
+
+            <div class="btn">
+                <a href="/delete/{{cidades.id}}/confirmed" class="choice">Remover</a>
+                <a href="/read" class="choice">Cancelar</a>
+            </div>
+        </div>
+
+    {% else %}
+        
+        <div class="bloco">
+            <h2>Remover Registro</h2>
+        </div>
+
+        <div class="bloco">
+            <p>Nenhum registro foi encontrado.</p>
+        </div>
+
+        <div class="bloco">
+            <a href="/read" class="botao">Voltar para a lista de lugares</a>
+        </div>
+
+    {% endif %}
+
+</body>
+</html>
